@@ -1,3 +1,4 @@
+
 ![header](http://mjurczyk.github.io/png-to-hex/pikachu-header.png)
 # PNG-to-HEX
 > Easily convert PNG images into hexadecimal value batches.
@@ -95,49 +96,58 @@ Either way you choose, the effect will be similar. Below you will find the refer
 > Path to the configuration file. If defined, configuration read from the file will override all other settings.
 
 cli: ***-c*** | ***-conf*** | ***-config***
+
 default: ***undefined***
 
 #### input
 > Input file(s).
 
 cli: ***-i*** | ***-input*** | ***-f*** | ***-file*** | (last argument passed in cli)
+
 default: ***undefined***
+
 required: ***true***
 
 #### output
 > Output name (for both file and hex table variable). This has to be a valid C variable name (module will notify you, if it is not ok).
 
 cli: ***-o*** | ***-output***
+
 default: ***'image'***
 
 #### outputDir
 > Output directory.
 
 cli: ***-odir***
+
 default: ***'./output'***
 
 #### outputExt
 > Output file extension.
 
 cli: ***-oext***
+
 default: ***'txt'***
 
 #### minify
 > If set to true, converter will remove all unnecessary whitespace from the output and present it as a single-line hex table.
 
 cli: ***-min*** | ***-minify***
+
 default: ***false***
 
 #### pngFilter
 > [node-png](https://github.com/liangzeng/node-png) filtering value.
 
 cli: ***-flt*** | ***-filter***
+
 default: ***-1***
 
 #### bwThreshold
 > Black/white threshold. Converted sums RGB channels for each pixel, and depending on the bwThreshold value, sets the pixel to either black (1) or white (0).
 
 cli: ***-thr*** | ***-threshold***
+
 default: ***1.7***
 
 #### batchWidth
@@ -145,34 +155,39 @@ default: ***1.7***
 > If set to imageWidth, converter will produce stripes instead of batches.
 
 cli: ***-w*** | ***-width***
+
 default: ***5***
 
 #### batchHeight
 > Batch size. Batch height usually depends on the application. For 8-bit displays you want to keep it 8. If you display write buffer is 16, 32 etc. you ought to adjust the height.
 
 cli: ***-h*** | ***-height***
+
 default: ***8***
 
 #### preview
 > If set to true, transformed images will be saved in the preview directory (useful when you try different bwThreshold values on your images).
 
 cli: ***-p*** | ***-preview***
+
 default: ***false***
 
 #### previewDir
 > Preview files directory.
 
 cli: ***-pdir***
+
 default: ***'./preview'***
 
 #### previewExt
 > Preview files extension. This does not affect the true extension of the file, which will still be a png.
 
 cli: ***-pext***
+
 default: ***'png'***
 
 ## Sample implementation
-This is a sample implementation of the final hex table and Nokia 5110 display:
+This is a sample implementation of the final hex table on Nokia 5110 display:
 
 ```C
 /*
