@@ -69,7 +69,7 @@ module.exports = function (grunt) {
     }
   });
   
-  grunt.loadTasks('png-to-hex');
+  grunt.loadNpmTasks('png-to-hex');
   
   grunt.registerTask('default', ['png2hex']);
 };
