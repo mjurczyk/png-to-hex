@@ -31,15 +31,12 @@ In order to convert an image, you have to make sure it can be divided into batch
 2. In the directory create configuration file `config.json`. Inside of it write:
 ```json
 {
-  // Files
   "input": "./assets/image.png",
   "output": "image",
   "outputDir": "./output",
   
-  // Don't minify the output
   "minify": false,
   
-  // Generate preview files
   "preview": true,
   "previewDir": "./preview",
 }
