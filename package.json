@@ -1,6 +1,6 @@
 {
   "name": "png-to-hex",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Easly convert PNG images into hex-value batches.",
   "main": "index.js",
   "author": "mjurczyk",
