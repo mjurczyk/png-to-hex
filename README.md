@@ -1,11 +1,14 @@
+![header](http://mjurczyk.github.io/png-to-hex/pikachu-header.png)
+
 # PNG-to-HEX
-> Easly convert PNG images into hexadecimal value batches.
+> Easily convert PNG images into hexadecimal value batches.
 
 ## What
 This module might be a Google Plus of npm modules, however for some it might be extremely helpful during small hardware projects, display testing etc.
 While working with bare, low level hardware we sometimes want or need to display a complex pixel structure, like a font or image. If you wish to store either of these in your codebase (for example a default system font), it might be tiresome to prepare a hex table for it. This library generates the hex table for you, and presents it in a C-style code, ready for use in your project.
 
 ## How it works
+![example](http://mjurczyk.github.io/png-to-hex/pikachu-transform-example.png)
 
 At first, module grabs your image and desaturates it. After that, the black&white image is split into a table of batches (or stripes).
 Each batch is then carefully transformed into binary numbers, and then once more, into hexadecimal values.
