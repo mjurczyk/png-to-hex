@@ -1,4 +1,4 @@
-![header](http://mjurczyk.github.io/png-to-hex/pikachu-header.png)
+![header](http://mjurczyk.github.io/png-to-hex/pikachu-header.pn)
 # PNG-to-HEX
 > Easily convert PNG images into hexadecimal value batches.
 
