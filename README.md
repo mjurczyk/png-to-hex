@@ -38,7 +38,7 @@ In order to convert an image, you have to make sure it can be divided into batch
   "minify": false,
   
   "preview": true,
-  "previewDir": "./preview",
+  "previewDir": "./preview"
 }
 ```
 3. Now open the terminal console in the directory and type `node node_modules/png-to-hex -c config.json`. 
