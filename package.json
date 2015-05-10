@@ -1,6 +1,6 @@
 {
   "name": "png-to-hex",
-  "version": "1.0.4b",
+  "version": "1.0.4c",
   "description": "Easily convert PNG images into hex-value batches.",
   "main": "index.js",
   "author": "mjurczyk",
@@ -10,7 +10,10 @@
     "node-png": "^0.4.3",
     "object-assign": "^2.0.0"
   },
-  "repo": "https://github.com/mjurczyk/png-to-hex",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mjurczyk/png-to-hex"
+  },
   "keywords": [
     "png",
     "hex table",
