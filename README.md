@@ -24,7 +24,8 @@ In order to convert an image, you have to make sure it can be divided into batch
 
 ### Install module
 1. First of all, you will need `nodejs` installed on your computer. You can grab the latest version [here](https://nodejs.org/download/). This will install both `node` and `npm` for you.
-2. Since you already have `npm`, you can now go to a desired directory, open terminal there and type `npm install png-to-hex`. It will download and install the package.
+2. Since you already have `npm`, you can now go to a desired directory, open terminal there and type `npm init`. This will create a npm project in the directory and allow us to install additional modules. Feel free to quickly click-through all prompts, they do not matter in our case.
+2. With set up project, type `npm install png-to-hex`. It will download and install the png-to-hex package.
 
 ### Stand-alone command
 *(For the sake of example, I'll assume we do everything in the module directory)*
